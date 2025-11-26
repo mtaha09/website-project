@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- head -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rayyan's Website</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap">
+ <style> 
+    :root{
+        --neon-blue: #00ffcc;
+        --neon-purple: #800080;
+        --neon-shadow-blue:0 0 10px #00ccff, 0 0 20px #00e0ff; 
+        --neon-shadow-purple:0 0 10px #800080, 0 0 20px #ae53ba;  
+    }   
+    body {
+        color: white;
+        font-family: 'Inter', sans-serif;           
+    }
+ </style>
+</head>
+
+<!-- body -->
+<body class="bg-gray-900" class="text-gray-100 antialiased" class="font-sans">
+    
+<!-- style -->
+    <style>
+        :root {
+            --neon-blue: #00ffcc;
+            --neon-purple: #800080;
+            --neon-shadow-blue:0 0 10px #00ccff, 0 0 20px #00e0ff; 
+            --neon-shadow-purple:0 0 10px #800080, 0 0 20px #ae53ba;  
+        }
+
+        body {
+            color: blue;
+            font-family: 'Inter', sans-serif;           
+        }
+    </style>
+
+<div class="min-h-screen relative overflow-x-hidden">
+  <header id="main-header" class="fixed top-0 left-0 w-full z-50 p-4 
+  lg:px-12 backdrop-blur-sm bg-gray-900/50 shadow-lg font-bold">
+  <div class="container mx-auto flex justify-between items-center">
+    
+    <a href="#" class="text-3xl font-extrabold" class="fixed left-0 text-center" style="color: var(--neon-blue);">
+Rayyan <span class="text-white" class="fixed left-0 text-center">LLC</span>
+    </a>
+    <nav>
+        <ul class="flex space-y-4 md:space-y-0 md:space-x-8 items-center">
+            <li><a href="#" class="text-gray-300 hover:text-cyan-300">Home</a></li>
+            <li><a href="#" class="text-gray-300 hover:text-cyan-300">About</a></li>
+            <li><a href="#" class="text-gray-300 hover:text-cyan-300">Services</a></li>
+            <li><a href="#" class="text-gray-300 hover:text-cyan-300">Contact</a></li>
+        </ul>
+    </nav>
+
+
+
+
+
+<!-- scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+   <script>
+    gsap.registerPlugin(ScrollTrigger);
+    gsap.to('h1', {
+        scrollTrigger: {
+            trigger: 'h1',
+            start: 'top top',
+            end: 'bottom bottom',
+            scrub: true,
+   </script>
+   
+</body>
+</html>
