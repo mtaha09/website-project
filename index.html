@@ -24,7 +24,7 @@
 </head>
 
 <!-- body -->
-<body class="bg-gray-900" class="text-gray-100 antialiased" class="font-sans">
+<body class="bg-gray-950" class="text-gray-100 antialiased" class="font-sans">
     
 <!-- style -->
     <style>
@@ -43,23 +43,40 @@
 
 <div class="min-h-screen relative overflow-x-hidden">
   <header id="main-header" class="fixed top-0 left-0 w-full z-50 p-4 
-  lg:px-12 backdrop-blur-sm bg-gray-900/50 shadow-lg font-bold">
+  lg:px-12 backdrop-blur-sm bg-gray-950/80 shadow-lg font-bold">
   <div class="container mx-auto flex justify-between items-center">
     
     <a href="#" class="text-3xl font-extrabold" class="fixed left-0 text-center" style="color: var(--neon-blue);">
 Rayyan <span class="text-white" class="fixed left-0 text-center">LLC</span>
     </a>
-    <nav>
-        <ul class="flex space-y-4 md:space-y-0 md:space-x-8 items-center">
-            <li><a href="#" class="text-gray-300 hover:text-cyan-300">Home</a></li>
-            <li><a href="#" class="text-gray-300 hover:text-cyan-300">About</a></li>
-            <li><a href="#" class="text-gray-300 hover:text-cyan-300">Services</a></li>
-            <li><a href="#" class="text-gray-300 hover:text-cyan-300">Contact</a></li>
-        </ul>
-    </nav>
+   
+    <nav class="hidden md:flex space-x-12 text-xl items-center">
+        <a href="#home" class="text-gray-300 hover:text-cyan-400 transition duration-300">Home</a>
+        <a href="#services" class="text-gray-300 hover:text-cyan-400 transition duration-300">Services</a>
+        <a href="#about" class="text-gray-300 hover:text-cyan-400 transition duration-300">About</a>
+        <a href="#contact" class="text-gray-300 hover:text-cyan-400 transition duration-300">Contact</a>
+        <button
+            class="hero-cta px-6 py-2 rounded-full font-semibold transition duration-300 transform bg-gradient-to-r from-blue-600 to-purple-600 hover:scale-105"
+            style="box-shadow: var(--neon-shadow-blue);">
+            Contact Us
+        </button>
+</nav>
+<button id="mobile-menu-button"
+    class="md:hidden p-2 text-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-cyan-400">
+    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+    </svg>
+</button>
 
-
-
+    <div id="mobile-menu"
+        class="fixed inset-0 bg-gray-950/95 z-40 transform -translate-x-full transition-transform duration-500 ease-in-out md:hidden flex flex-col justify-center items-center space-y-8">
+        <a href="#home" class="text-3xl font-bold text-gray-300 hover:text-cyan-400" onclick="closeMobileMenu()">Home</a>
+        <a href="#services" class="text-3xl font-bold text-gray-300 hover:text-cyan-400"
+            onclick="closeMobileMenu()">Services</a>
+        <a href="#about" class="text-3xl font-bold text-gray-300 hover:text-cyan-400" onclick="closeMobileMenu()">About</a>
+        <a href="#contact" class="text-3xl font-bold text-gray-300 hover:text-cyan-400"
+            onclick="closeMobileMenu()">Contact</a>
+    </div>
 
 
 <!-- scripts -->
@@ -72,7 +89,7 @@ Rayyan <span class="text-white" class="fixed left-0 text-center">LLC</span>
             trigger: 'h1',
             start: 'top top',
             end: 'bottom bottom',
-            scrub: true,
+            scrub: true,}});
    </script>
    
 </body>
