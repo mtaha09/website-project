@@ -7,79 +7,69 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rayyan's Website</title>
     <script src="https://cdn.tailwindcss.com"></script>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap">
- <style> 
-    :root{
-        --neon-blue: #00ffcc;
-        --neon-purple: #800080;
-        --neon-shadow-blue:0 0 10px #00ccff, 0 0 20px #00e0ff; 
-        --neon-shadow-purple:0 0 10px #800080, 0 0 20px #ae53ba;  
-    }   
-    body {
-        color: purple;
-        font-family: 'Inter', sans-serif;           
-    }
-    
- </style>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap">
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <!-- body -->
-<body class="bg-gray-950" class="text-gray-100 antialiased" class="font-sans">
-    
-<!-- style -->
-    <style>
-        :root {
-            --neon-blue: #00ffcc;
-            --neon-purple: #800080;
-            --neon-shadow-blue:0 0 10px #00ccff, 0 0 20px #00e0ff; 
-            --neon-shadow-purple:0 0 10px #800080, 0 0 20px #ae53ba;  
-        }
-
-        body {
-            color: blue;
-            font-family: 'Inter', sans-serif;           
-        }
-    </style>
+<body class="bg-gray-900 text-gray-100 antialiased font-sans">
 
 <div class="min-h-screen relative overflow-x-hidden">
   <header id="main-header" class="fixed top-0 left-0 w-full z-50 p-4 
-  lg:px-12 backdrop-blur-sm bg-gray-950/80 shadow-lg font-bold">
+  lg:px-12 backdrop-blur-sm bg-gray-900/50 shadow-lg font-bold">
   <div class="container mx-auto flex justify-between items-center">
     
-    <a href="#" class="text-3xl font-extrabold" class="fixed left-0 text-center" style="color: var(--neon-blue);">
-Rayyan <span class="text-white" class="fixed left-0 text-center">LLC</span>
+    <a href="#" class="text-3xl font-extrabold fixed left-0 text-center logo-link">
+Rayyan <span class="text-white">LLC</span>
     </a>
-   
-    <nav class="hidden md:flex space-x-12 text-xl items-center">
-        <a href="#home" class="text-gray-300 hover:text-cyan-400 transition duration-300">Home</a>
-        <a href="#services" class="text-gray-300 hover:text-cyan-400 transition duration-300">Services</a>
-        <a href="#about" class="text-gray-300 hover:text-cyan-400 transition duration-300">About</a>
-        <a href="#contact" class="text-gray-300 hover:text-cyan-400 transition duration-300">Contact</a>
-        <button
-            class="hero-cta px-6 py-2 rounded-full font-semibold transition duration-300 transform bg-gradient-to-r from-blue-600 to-purple-600 hover:scale-105"
-            style="box-shadow: var(--neon-shadow-blue);">
-            Contact Us
-        </button>
-</nav>
-<button id="mobile-menu-button"
-    class="md:hidden p-2 text-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-cyan-400">
-    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
-    </svg>
-</button>
-
-    <div id="mobile-menu"
-        class="fixed inset-0 bg-gray-950/95 z-40 transform -translate-x-full transition-transform duration-500 ease-in-out md:hidden flex flex-col justify-center items-center space-y-8">
-        <a href="#home" class="text-3xl font-bold text-gray-300 hover:text-cyan-400" onclick="closeMobileMenu()">Home</a>
-        <a href="#services" class="text-3xl font-bold text-gray-300 hover:text-cyan-400"
-            onclick="closeMobileMenu()">Services</a>
-        <a href="#about" class="text-3xl font-bold text-gray-300 hover:text-cyan-400" onclick="closeMobileMenu()">About</a>
-        <a href="#contact" class="text-3xl font-bold text-gray-300 hover:text-cyan-400"
-            onclick="closeMobileMenu()">Contact</a>
-    </div>
+    <nav>
+        <ul class="flex flex-row flex-nowrap items-center space-x-4 md:space-x-8 lg:space-x-14">
+            <li class="whitespace-nowrap"><a href="#" class="text-gray-300 hover:text-cyan-300">Home</a></li>
+            <li class="whitespace-nowrap"><a href="#" class="text-gray-300 hover:text-cyan-300">About</a></li>
+            <li class="whitespace-nowrap"><a href="#" class="text-gray-300 hover:text-cyan-300">Services</a></li>
+            <li class="whitespace-nowrap"><a href="#" class="text-gray-300 hover:text-cyan-300">Contact</a></li>
+            <button class="flex flex-row flex-nowrap items-center hero-cta px-8 py-4 rounded-full font-semibold transition duration-300 transform bg-gradient-to-r from-blue-600 to-purple-600 hover:scale-105">
+                Get Started
+            </button>
+            <button id="mobile-menu-button" class="md:hidden p-2 text-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-cyan-400">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+            </button>
+        </ul>
+    </nav>
+</div>
 
 
-<!-- scripts -->
+
+</header>
+<!-- mobile menu -->
+<div id="mobile-menu" class="fixed inset-0 bg-gray-950/95 z-40 transform -translate-x-full transition-transform duration-500 ease-in-out md:hidden flex flex-col justify-center items-center space-y-8">
+            <a href="#home" class="text-3xl font-bold text-gray-300 hover:text-cyan-400" onclick="closeMobileMenu()">Home</a>
+            <a href="#services" class="text-3xl font-bold text-gray-300 hover:text-cyan-400" onclick="closeMobileMenu()">Services</a>
+            <a href="#about" class="text-3xl font-bold text-gray-300 hover:text-cyan-400" onclick="closeMobileMenu()">About</a>
+            <a href="#contact" class="text-3xl font-bold text-gray-300 hover:text-cyan-400" onclick="closeMobileMenu()">Contact</a>
+        </div>
+
+        <section id="home" class="min-h-screen flex items-center pt-24 pb-12 relative overflow-hidden">
+            <!-- Subtle background glow/gradient effect -->
+            <div class="hero-bg-glow absolute top-1/4 right-0 w-96 h-96 bg-cyan-500 rounded-full mix-blend-lighten filter blur-3xl opacity-50"></div>
+            <div class="hero-bg-glow absolute bottom-0 left-1/4 w-80 h-80 bg-purple-600 rounded-full mix-blend-lighten filter blur-3xl opacity-50"></div>
+            <div class="container mx-auto px-4 lg:px-12">
+                <!--Hero grid layout -->
+                <div class="lg:grid lg:grid-cols-2 gap-16 items-center">
+                    <div class="space-y-6 lg:space-y-8">
+                        <!-- 3.3: Main Title block -->
+                        <h1 class="hero-title text-5xl lg:text-8xl font-extrabold leading-snug text-white">
+                            One Stop Solution for, <span>all your cooling needs.</span>
+                        </h1>
+                        <!-- Hero subtitle -->
+                        
+                        <p class="hero-subtitle mt-4 text-xl text-gray-400 max-w-lg">
+                            We provide a wide range of cooling solutions for your home and business
+                        </p>      <div class="flex space-x-4 pt-4">
+                            <!-- Primary CTA -->
+                            <button class="hero-cta hero-cta-custom-shadow px-8 py-3 rounded-xl font-bold text-white transition duration-300 transform bg-gradient-to-r from-blue-600 to-purple-600 hover:scale-105">
+                                View Our Work
+                            </button>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
    <script>
@@ -89,7 +79,9 @@ Rayyan <span class="text-white" class="fixed left-0 text-center">LLC</span>
             trigger: 'h1',
             start: 'top top',
             end: 'bottom bottom',
-            scrub: true,}});
+            scrub: true,
+        }
+    })
    </script>
    
 </body>

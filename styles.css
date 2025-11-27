@@ -1,0 +1,32 @@
+:root {
+    --neon-blue: #00ffcc;
+    --neon-purple: #800080;
+    --neon-shadow-blue: 0 0 10px #00ccff, 0 0 20px #00e0ff;
+    --neon-shadow-purple: 0 0 10px #800080, 0 0 20px #ae53ba;
+}
+
+body {
+    color: blue;
+    font-family: 'Inter', sans-serif;
+}
+
+/* Logo styling */
+.logo-link {
+    color: var(--neon-blue);
+}
+
+/* Hero CTA button styling */
+.hero-cta {
+    box-shadow: var(--neon-shadow-blue);
+}
+
+/* Hero title span styling */
+.hero-title span {
+    color: var(--neon-blue);
+}
+
+/* Hero CTA button with custom shadow */
+.hero-cta-custom-shadow {
+    box-shadow: 0 0 15px rgba(0, 224, 255, 0.5);
+}
+
